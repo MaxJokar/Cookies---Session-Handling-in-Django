@@ -1,0 +1,15 @@
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Like/Dislike</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Линк 1</a> 
+      {% comment %} # we add numbers to  each link {% endcomment %}
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Welcome Dear{{ request.session.user_name }}</a>
+    </li>
+  </ul>

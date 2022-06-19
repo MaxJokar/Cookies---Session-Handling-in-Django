@@ -1,0 +1,19 @@
+{%  extends  'maintemplate.html' %}
+
+{% block content %}
+ <h2 style="color: red; text-align:center">{{message}}</h2> 
+   <form  method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="submit" value="register the Articel">
+   </form>
+{% endblock  %}
+
+{% block title %}
+    Registeration Part
+{% endblock  %}
+
+
+        
+
+

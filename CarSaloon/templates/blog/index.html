@@ -1,0 +1,43 @@
+{%  extends  'maintemplate.html' %}
+
+{% block content %}
+    <!-- {% comment %} <h1 class="blog-title">List of  Article </h1> {% endcomment %} -->
+    <h1> List of Article    </h1>
+    <table class="table table-striped table-bodreded">
+        <tr>
+            <th>Cover of the Book</th>
+            <th>title</th>
+            <th>description</th>
+            <th>Exists on Site</th>
+        </tr>
+        {% for blog in blogs %}
+            <tr>
+                <td>
+                    <img src="{{ media_url }} {{ blog.main_img }} " class="img-100" alt="{{blog.title}}">
+                </td>
+                <td>{{blog.title}}</td>
+                <td>{{blog.description}}</td>
+                <td>{{blog.is_active}}</td>
+               
+
+            </tr>
+        {% endfor %}    
+
+    </table>
+
+
+
+{% endblock  %}
+
+{% block title %}
+    Article Lists 
+{% endblock  %}
+
+
+        
+
+
+
+
+
+ 

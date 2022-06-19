@@ -1,0 +1,19 @@
+{%  extends  'maintemplate.html' %}
+
+
+
+{% block content %} 
+    {% if flag %}
+             <h1>Session Deleted </h1>
+    {% else %}   
+            <h1>There is No Session  at ALL</h1>  
+    {% endif %}            
+
+  
+{% endblock %}
+
+
+{% block title %}
+    Session Test
+{% endblock  %}
+

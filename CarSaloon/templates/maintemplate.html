@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        Car Saloon  |  {% block title %}{% endblock  %}
+    </title>
+    <link rel="stylesheet" href="/static/css/style.css">   
+    <!-- # 4 will added after we create css -->
+    <!-- # 4 will added after we create css -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+     {% comment %} if we make above Bootstrap syntax comment it  makes our website pink color otherwise it makes white  {% endcomment %}
+ 
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+    {% include "partials/header.html" %}
+
+    {% comment %} {% include "partials/header.html" %} {% endcomment %}
+  
+    
+
+    {% block content %}
+    maintemplate.html
+    {% endblock %}
+
+
+    {% include "partials/footer.html" %}
+    {% comment %} {% include "partials/script.html" %}  {% endcomment %}
+
+
+</body>
+</html>
+ 
